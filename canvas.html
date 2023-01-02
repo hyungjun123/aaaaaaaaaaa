@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+    <script>
+
+
+      window.addEventListener("load", function () {
+        const canvas = document.getElementById("color");
+        const context = canvas.getContext('2d');
+
+        context.fillStyle = "orange";
+        context.fillRect(260,500,500,500);
+        context.fillStyle = "black";
+        context.fillRect(440,850,120,150);
+        
+
+        context.beginPath();
+        context.moveTo(500, 200);
+        context.lineTo(950, 500);
+        context.lineTo(100, 500);
+        context.fillStyle = "brown";
+        context.fill();
+
+        context.beginPath();
+        context.arcTo(100, 100, 100, 100, Math.PI * 2);
+        context.fill();
+
+      
+
+       
+   
+    
+    
+  
+      });
+
+    </script>
+</head>
+<body>
+ <canvas id="color"
+ width="3000";
+ height="3000";
+ ></canvas>   
+</body>
+</html>
